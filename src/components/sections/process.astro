@@ -1,0 +1,95 @@
+---
+const serList = [
+  "advanced wound care",
+  "wound assessment classification",
+  "quality assurance",
+  "skin substitutes",
+  "weekly wound rounds",
+  "skin sweeps",
+  "tailored risk assessments",
+  "education and in-servicing",
+  "detailed same day documentation",
+  "electronic health records",
+  "and more!",
+];
+---
+
+<section class="service-details-section" aria-label="Service details section">
+  <div class="container w-layout-blockcontainer w-container">
+    <div class="service-details-section-title">
+      <div class="service-details-title-box">
+        <h2 class="service-details-title">Services We Provide</h2>
+      </div>
+    </div><div class="service-details-section-wrapper">
+      <div class="w-layout-grid service-details-section-grid" aria-label="Service details grid">
+
+
+        <div class="service-details-info-box">
+          <div class="service-details-image-wrapper filter-image-box">
+            <img
+              src="/images/process-image.webp"
+              alt="Service details"
+              class="service-details-image"
+            />
+          </div>
+          
+        </div>
+        
+        <div class="service-details-content">
+          <div class="service-details-rich-text w-richtext">
+            <h4>
+              We strive to understand your needs and tailor our services to your
+              unique preferences
+            </h4>
+            <p style="font-size: 18px; line-height: auto">
+              Our medical facility delivers exceptional, patient-centered care
+              using the latest medical technology. We offer comprehensive
+              services, ensuring personalized treatment, with a focus on
+              quality, convenience, and ongoing education.
+            </p>
+
+            <ul role="list" class="two-cols">
+              {serList.map((service) => <li>{service}</li>)}
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+
+
+.two-cols{
+  columns: 2;
+  column-gap: 30px;
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+  @media screen and (max-width: 479px) {
+    .two-cols{
+  columns: 1;
+  column-gap: 0px;
+  margin: 20px 0 20px 10px;
+}
+
+    .hero-title {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .hero-image {
+      margin-top: -40px;
+    }
+
+    .service-details-rich-text h3{text-align: center;}
+
+.service-details-info-box{order: 0;}
+.service-details-content{order:-1}
+
+  }
+</style>

@@ -1,0 +1,115 @@
+---
+const services = [
+  {
+    title: "Bedside Debridment",
+    content:
+      "Experience top-notch care with our bedside debridement service and management right at your bedside.",
+  },
+  {
+    title: "Weekly Wound Rounds",
+    content:
+      "Optimize your healing with our expert-led weekly wound rounds, ensuring consistent and attentive care.",
+  },
+  {
+    title: "Quality Assurance",
+    content:
+      "Ensure superior care with our rigorous quality assurance, dedicated to maintaining the highest medical standards.",
+  },
+  {
+    title: "Same day Documentation",
+    content:
+      "Benefit from our detailed same-day documentation, ensuring accurate and timely updates for your medical records.",
+  },
+  {
+    title: "Educational In-services",
+    content:
+      "Enhance your team’s expertise with our educational in-services, providing up-to-date medical training and knowledge.",
+  },
+  {
+    title: "Wound Assessment",
+    content:
+      "Receive precise care with our expert wound assessment and classification, ensuring accurate diagnosis and tailored treatment.",
+  },
+];
+---
+
+<section class="service-2-section" aria-label="Service section">
+  <div class="container w-layout-blockcontainer w-container">
+    <div class="service-2-section-title">
+      <div class="section-title">
+        <div
+          class="title-header"
+        >
+          <h2 class="title-heading">
+            Swift Healing, Superior Care. 
+            <span style="color:var(--secondary);">Your Wound is Our Priority</span>
+          </h2>
+        </div>
+      </div>
+    </div><div class="service-2-section-wrapper">
+      <div class="service-2-list-wrapper w-dyn-list">
+        <div role="list" class="service-2-list w-dyn-items" aria-label="List of services">
+          {
+            services.map((item) => (
+              <div
+                data-w-id="e5b41cd1-33f8-dd69-e5b6-f6a63acd9084"
+                role="listitem"
+                class="service-2-item w-dyn-item"
+              >
+                {/* <div class="service-link-block style-2 w-inline-block"> */}
+                <div class="service-link-block">
+                  <>
+                    <div class="service-content">
+                      <>
+                        <h3 class="service-title">{item.title}</h3>
+                        <p class="service-desc">{item.content}</p>
+                      </>
+                    </div>
+                  </>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  @media screen and (max-width: 479px) {
+    .service-link-block {
+      text-wrap: balance;
+      min-height: auto;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .service-link-block {
+      text-wrap: balance;
+      /* min-height: 290px; */
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .service-link-block {
+      text-wrap: balance;
+      min-height: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .service-link-block {
+      text-wrap: balance;
+      /* min-height: 280px; */
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .service-link-block {
+      text-wrap: balance;
+      /* min-height: 300px; */
+    }
+  }
+</style>

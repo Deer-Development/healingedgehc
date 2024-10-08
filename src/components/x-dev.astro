@@ -1,0 +1,75 @@
+<div class="responsive-container">
+    <span class="default">default (&lt; 640px)</span>
+    <span class="sm">sm</span>
+    <span class="md">md</span>
+    <span class="lg">lg</span>
+    <span class="xl">xl</span>
+</div>
+
+
+<style>
+    .responsive-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem; /* equivalent to p-2 */
+    margin: 0.5rem;  /* equivalent to m-2 */
+    font-size: 0.875rem; /* equivalent to text-sm */
+    text-align: center;
+    color: #db2777; /* equivalent to text-pink-600 */
+    background-color: #d1d5db; /* equivalent to bg-gray-300 */
+    border: 1px solid #9ca3af; /* equivalent to border-gray-400 */
+    border-radius: 0.375rem; /* equivalent to rounded */
+    z-index: 9999;
+}
+
+.default {
+    display: inline;
+}
+
+.sm,
+.md,
+.lg,
+.xl {
+    display: none;
+    font-weight: bold;
+}
+
+@media (min-width: 640px) {
+    .default {
+        display: none;
+    }
+    .sm {
+        display: inline;
+    }
+}
+
+@media (min-width: 768px) {
+    .sm {
+        display: none;
+    }
+    .md {
+        display: inline;
+    }
+}
+
+@media (min-width: 1024px) {
+    .md {
+        display: none;
+    }
+    .lg {
+        display: inline;
+    }
+}
+
+@media (min-width: 1280px) {
+    .lg {
+        display: none;
+    }
+    .xl {
+        display: inline;
+    }
+}
+</style>

@@ -1,0 +1,31 @@
+---
+import Button from "@components/ui/Button.astro";
+---
+
+<section class="header" role="banner">
+  <div class="header-content-wrapper">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+      <div class="navbar w-container container">
+        <div class="site-navigation">
+          <a href="/" aria-current="page" class="logo-block w-nav-brand w--current" aria-label="home">
+            <img src="/images/healingedge-logo.svg"
+            loading="lazy" alt="Healing Edge Logo" class="logo" /></a>
+
+          <nav role="navigation" class="nav-menu w-nav-menu" aria-label="menu">
+            <a href="/" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
+            <a href="/skilled" class="nav-link w-nav-link">Skilled Nursing Facilities</a>
+            <a href="/health" class="nav-link w-nav-link">Home Health</a>
+          </nav>
+
+          <div class="navbar-extra">
+            <Button label="Contact Us" />
+          </div>
+          <div class="responsive-menu active w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+            <div class="responsive-menu-icon w-icon-nav-menu"></div>
+          </div>
+        </div>
+      </div>
+      <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+    </div>
+  </div>
+</section>
